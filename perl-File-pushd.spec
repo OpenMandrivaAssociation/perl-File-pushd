@@ -1,7 +1,7 @@
 
 %define realname   File-pushd
 %define version    1.00
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{realname}
 Version:    %{version}

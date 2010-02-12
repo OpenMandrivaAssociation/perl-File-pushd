@@ -1,18 +1,16 @@
+%define upstream_name    File-pushd
+%define upstream_version 1.00
 
-%define realname   File-pushd
-%define version    1.00
-%define release    %mkrel 2
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 3
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
 Summary:    Change directory temporarily for a limited scope
-Source:     http://www.cpan.org/modules/by-module/File/%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Cwd)
 BuildRequires: perl(File::Path)
 BuildRequires: perl(File::Spec)
@@ -20,7 +18,8 @@ BuildRequires: perl(File::Temp)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build::Compat)
 
-BuildArch: noarch
+BuildArch:  noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 File::pushd does a temporary 'chdir' that is easily and automatically
@@ -38,14 +37,14 @@ For convenience, the object stringifies as the canonical form of the
 absolute pathname of the directory entered.
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %buildroot
@@ -59,5 +58,3 @@ rm -rf %buildroot
 %doc Changes README LICENSE
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-

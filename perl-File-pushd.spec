@@ -1,15 +1,15 @@
 %define upstream_name    File-pushd
-%define upstream_version 1.00
+%define upstream_version 1.005
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%perl_convert_version 1.005
+Release:	1
 
 Summary:	Change directory temporarily for a limited scope
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-pushd-1.005.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Cwd)
@@ -75,4 +75,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Tue Dec 30 2008 cpan2dist 1.00-1mdv
 - initial mdv release, generated with cpan2dist
+
 

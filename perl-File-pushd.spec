@@ -1,5 +1,5 @@
 %define upstream_name    File-pushd
-%define upstream_version 1.006
+%define upstream_version 1.007
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -54,6 +54,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes README LICENSE
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
-

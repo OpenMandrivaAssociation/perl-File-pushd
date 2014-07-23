@@ -1,5 +1,6 @@
 removed_sources:
   File-pushd-1.00.tar.gz: 1c78a35d0876c64ceeadeb305ef1813a27c6bc14
   File-pushd-1.005.tar.gz: 927e75e2c4300318e67534ac240c6e13704ea61c
-sources:
   File-pushd-1.006.tar.gz: 1a5713f9dde8e96ba272467938f9acf86ef50590
+sources:
+  File-pushd-1.007.tar.gz: 32c6776c6759186c7b8a3239dd5411becb0eecd2

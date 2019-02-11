@@ -1,15 +1,15 @@
 %define upstream_name    File-pushd
-%define upstream_version 1.007
+%define upstream_version 1.016
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Change directory temporarily for a limited scope
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		http://metacpan.org/release/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
@@ -18,7 +18,6 @@ BuildRequires:	perl(File::Path)
 BuildRequires:	perl(File::Spec)
 BuildRequires:	perl(File::Temp)
 BuildRequires:	perl(Test::More)
-BuildRequires:	perl(Module::Build::Compat)
 
 BuildArch:	noarch
 

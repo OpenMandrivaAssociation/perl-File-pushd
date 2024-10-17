@@ -9,7 +9,7 @@ Summary:	Change directory temporarily for a limited scope
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/release/%{upstream_name}
+Url:		https://metacpan.org/release/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel

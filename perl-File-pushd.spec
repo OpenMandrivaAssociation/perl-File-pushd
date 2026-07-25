@@ -2,15 +2,15 @@
 %define upstream_version 1.016
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Version:	%{upstream_version}
+Release:	2
 
 Summary:	Change directory temporarily for a limited scope
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/release/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/dagolden/File-pushd
+Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

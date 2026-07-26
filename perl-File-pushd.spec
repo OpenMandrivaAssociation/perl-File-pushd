@@ -1,16 +1,14 @@
 %define upstream_name    File-pushd
-%define upstream_version 1.016
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	2
+Version:	1.016
+Release:	3
 
 Summary:	Change directory temporarily for a limited scope
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/dagolden/File-pushd
-Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -38,7 +36,7 @@ For convenience, the object stringifies as the canonical form of the
 absolute pathname of the directory entered.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor

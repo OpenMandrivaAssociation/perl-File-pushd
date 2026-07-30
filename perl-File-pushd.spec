@@ -1,14 +1,15 @@
 %define upstream_name    File-pushd
+%define upstream_version 1.016
 Name:		perl-%{upstream_name}
 Version:	1.016
-Release:	3
+Release:	1
 
 Summary:	Change directory temporarily for a limited scope
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/dagolden/File-pushd
-Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-1.016.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

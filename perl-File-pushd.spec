@@ -2,7 +2,7 @@
 %define upstream_version 1.016
 Name:		perl-%{upstream_name}
 Version:	1.016
-Release:	3
+Release:	4
 
 Summary:	Change directory temporarily for a limited scope
 
